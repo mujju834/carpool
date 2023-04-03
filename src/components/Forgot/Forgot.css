@@ -1,0 +1,24 @@
+
+.linked{
+    width: 100%;
+    /* border: 2px solid forestgreen; */
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.resetbtn{
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.resetlink{
+/* border: 2px solid green; */
+width: 100%;
+display: flex;
+justify-content: flex-end;
+text-decoration: none;
+}
+

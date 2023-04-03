@@ -8,23 +8,23 @@ const mongoose=require('mongoose')
 const bcrypt = require('bcrypt');      //this two are for authentication
 const jwt = require('jsonwebtoken');
 
-
-const { json } = require('express')
-const flatted = require('flatted'); //used to send the entire object
-const myschema = require('./Mongoose')
-const registerschema = require('./Mongoose')
-const { resolvePath } = require('react-router-dom')
-const loginschema = require('./Mongoose')
-const secretKey = 'mysecretkey#$%';
-
-
 app.use(bodyParser.json())
-app.use(cors())
+
+app.use(cors({
+  // origin: 'https://cerulean-centaur-03ff14.netlify.app/',
+  // optionsSuccessStatus: 200
+}))
 
 mongoose.connect('mongodb://Shop:mujjumujahid786@cluster0-shard-00-00.umrqx.mongodb.net:27017,cluster0-shard-00-01.umrqx.mongodb.net:27017,cluster0-shard-00-02.umrqx.mongodb.net:27017/test?replicaSet=atlas-4pmc3y-shard-0&ssl=true&authSource=admin')
   .then(() => console.log('Connection to database successful'))
   .catch((err) => console.error('Error connecting to database', err));
 
+
+  const registerschema = mongoose.Schema({
+    name: { type: String, required: true },
+    email: { type: String, required: true },
+    pass: { type: String, required: true }
+  });
 
 app.get('/', (req, res) => {
 //     const flattenedReq = flatted.stringify(res);
@@ -138,6 +138,6 @@ if(updateuser){
 });
 
 
+const PORT = process.env.PORT || 5000
 
-const PORT =  5000
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`))

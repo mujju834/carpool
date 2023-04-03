@@ -1,0 +1,187 @@
+.login-outer{
+    /* border: 2px solid red; */
+    height: 100vh;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+ 
+
+}
+
+
+.login-inner{
+  width: 35%;
+  height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ background-color: white;
+ position: relative;
+ /* border: 2px solid red; */
+}
+
+.login-inner-seconddiv{
+  width: 35vw;
+  height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ background-color: white;
+ position: relative;
+ border: 2px solid red;
+ position: absolute;
+}
+
+.login-inner-seconddiv input{
+  height: 6vh;
+  width: 30vw;
+  margin-bottom: 4px;
+  text-align:  center;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.login-inner-seconddiv p{
+  margin: 5px 0;
+}
+
+.forgotaccbtn{
+  border: none;
+  background-color: white;
+}
+
+
+.login-inner h1{
+  font-size: 40px;
+  color: #4018f2;
+  border: 2px solid green;
+  margin-bottom: 20px;
+}
+
+.login-inner input{
+  height: 6vh;
+  width: 30vw;
+  margin-bottom: 4px;
+  text-align:  center;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.userlogin-btn{
+  height: 45px;
+    width: 90%;
+    font-size: 18px;
+    font-weight:300;
+    background-color:#1877f2;
+    color:white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.forgot{
+  font-size: 17px;
+  margin: 5px 0;
+
+}
+
+.userlogin-register{
+  height: 40px;
+  width: 130%;
+  font-size: 15px;
+  font-weight:300;
+  background-color:#3bad37;
+  color:white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 5px;
+
+}
+
+
+.userlogin-or{
+  margin: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span{
+  font-size: 20px;
+}
+.login-inner h3{
+  /* border: 2px solid red; */
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#forgottext{
+  margin: 10px 0;
+  border-color: #f0f2f5;
+
+}
+
+
+form{
+  width: 100%;
+}
+
+.horizontal{
+  border: 1px solid f0f2f5;
+  width: 100%;
+  margin: 8px;
+
+}
+
+.login-inner-forgot-para{
+  /* border: 2px solid red; */
+  text-align: center;
+  width: 80%;
+}
+
+
+.forgotbtns{
+  /* border: 1px solid red; */
+  width: 100%;
+  margin: 5px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+  .cancelbtn{
+    height: 40px;
+    width: 25%;
+  font-size: 18px;
+  font-weight:300;
+  background-color:#e4e6eb;
+  color:black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+  }
+
+  .searchbtn{
+    height: 40px;
+    width: 25%;
+  font-size: 18px;
+  font-weight:300;
+  background-color:#1877f2;
+  color:white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 5px;
+
+  }

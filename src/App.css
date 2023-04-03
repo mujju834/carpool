@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.userregis-outerfirst{
+display: flex;
+justify-content:center;
+align-items: center;
+text-align: center;
+width: 100vw; 
+height: 100vh;
+border: 2px solid green;
+background-color: #f0f2f5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.userregis-innerfirst{
+  border: 2px solid violet;
+  padding: 5px;
+  margin: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.userregis-innerfirst h1{
+  font-size: 40px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.userregis-innerfirst h3{
+  font-size: 25px;
+}
+
+/* register div starts here */
+
+.userregis-innersecond{
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+border: 2px solid red; 
+background-color: white;
+  
+}
+
+.userregis-register{
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.userregis-inputs{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.userregis-allinputs{
+  height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  width: 250px;
+  border-radius: 10%;
+  border: 1px solid black;
+  margin-bottom: 3px;
+
+}
+
+.userregis-check{
+  margin-right: 3px;
+}
+
+.userregis-privacypolicy{
+  font-size: 18px;
+  padding: 4px;
+}
+
+/* .userregis-terms{
+} */
+
+.userregis-btn{
+  height: 40px;
+  width: 250px;
+  font-size: 18px;
+  font-weight:300;
+  background-color:#1877f2;
+  color:white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.userregis-already{
+  margin-top: 5px;
+}
+
+.userregis-alreadyregistered{
+  text-align: center;
+  margin: 5px 0 10px 0;
+}
+
+.userregis-orloginbtn{
+  height: 40px;
+  width: 250px;
+  font-size: 18px;
+  font-weight:300;
+  background-color:#42b72a;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
+  border-radius: 10px;
+cursor: pointer;
+margin-bottom: 10px;
 }
